@@ -13,7 +13,7 @@ public class ArrayTests {
 	public void avgLowest() {
     double[] input2 = {3.0,4.0,5.0};
     double[] s = {ArrayExamples.averageWithoutLowest(input2)};
-   assertEquals(new double[]{4.5}, s);
+   assertArrayEquals(new double[]{4.5}, s, 0.0001);
 	}
 
   @Test
