@@ -6,11 +6,11 @@ public class ArrayExamples {
   //fixed
   static void reverseInPlace(int[] arr) {
     int[] h = new int[arr.length];
-    for (int i = 0; i < arr.length; i++){
+    for (int i : h){
       h[i] = arr[i];
     }
     for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = h[arr.length -  1 - i];
+      arr[i] = h[ (arr.length -  1) - i];
     }
   }
   // Returns a *new* array with all the elements of the input array in reversed order
